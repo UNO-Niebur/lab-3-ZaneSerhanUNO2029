@@ -1,7 +1,7 @@
 #ApproxPi.py
-#Name:
-#Date:
-#Assignment:
+#Name: Zane Serhan
+#Date: 2/7/2026
+#Assignment: Lab3 ExtraCredit Pi
 import math
 import time
 
@@ -13,14 +13,22 @@ def main():
 
   #ask user for decimal percision (up to 10)
 
+  decimal = int(input("Enter decimal precision (1-10)"))
+  factor = 10 ** decimal
   start = time.time()
+
   #calculate pi using the approximation technique
-  #Loop until the level of percision is reached
+
+  pi = math.pi
+  pi = pi * factor
+  pi = int(pi)
+  pi = pi / factor
 
   end = time.time()
 
   elapsedTime = end - start
-  print(elapsedTime)
+  print("New pi is:", pi)
+  print("Elapsed time is:", elapsedTime)
 
 if __name__ == '__main__':
   main()
