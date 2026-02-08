@@ -36,7 +36,7 @@ def main():
         ComputerChoice = "Rock"
       elif Computer =='P':
         ComputerChoice = "Paper"
-      elif Computer == 'S':
+      else:
         ComputerChoice = "Scissors"
 
       print("Player chose: ", UserChoice)
