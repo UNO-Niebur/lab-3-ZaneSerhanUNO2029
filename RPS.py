@@ -60,7 +60,7 @@ def main():
 
       Ask = input("Would you like to play again? (Y/N) ").upper()
       if Ask != 'Y':
-        PlayAgain = False
+        break
 
   else:
     print("Invalid choice. Try again. Enter R or P or S")
