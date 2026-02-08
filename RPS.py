@@ -24,20 +24,20 @@ def main():
 
     User = input("Select Rock, Paper, or Scissors (R, P, S)   ").upper()
 
-    if User == 'R' or User == 'P' or User == 'S':
+    if (User == 'R') or (User == 'P') or (User == 'S'):
       if User == 'R':
        UserChoice = "Rock"
       elif User == 'P':
        UserChoice = "Paper"
-      elif User == 'S':
-        UserChoice == "Scissors"
+      else:
+        UserChoice = "Scissors"
 
       if Computer == 'R':
         ComputerChoice = "Rock"
       elif Computer =='P':
-        ComputerChoice == "Paper"
+        ComputerChoice = "Paper"
       elif Computer == 'S':
-        ComputerChoice == "Scissors"
+        ComputerChoice = "Scissors"
 
       print("Player chose: ", UserChoice)
       print("Computer chose: ", ComputerChoice)
@@ -58,7 +58,7 @@ def main():
 
   #Ask the user if they would like to play again.
 
-      Ask = input("Would you like to play again? (Y/N)").upper()
+      Ask = input("Would you like to play again? (Y/N) ").upper()
       if Ask != 'Y':
         PlayAgain = False
 
